@@ -6,3 +6,4 @@ for (const sElement of s) {
     console.log(sElement)
 }
 
+

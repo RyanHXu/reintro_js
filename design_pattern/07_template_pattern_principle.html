@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<script>
+    function PaperTemplate() {
+        this.parentPrint = function () {
+            document.write("Print A4 Paper<br>");
+        }
+    }
+
+    function ColorTemplate() {
+    }
+
+    ColorTemplate.prototype = new PaperTemplate();
+    ColorTemplate.prototype.colorPrint = function () {
+        this.parentPrint();
+        document.write("Set the color of A4 paper red<br>");
+    }
+    const template = new ColorTemplate();
+    template.colorPrint();
+
+</script>
+
+
+</body>
+</html>

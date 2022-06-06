@@ -2,6 +2,8 @@
   "name": "reintro_js",
   "version": "1.0.0",
   "dependencies": {
+    "ejs": "^3.1.6",
+    "jquery": "^3.6.0",
     "node-fetch": "^3.2.0"
   }
 }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<script>
+    const strategy = {
+
+        "Addition": (a, b) => {
+            return a + b;
+        },
+
+        "Subtraction": (a, b) => {
+            return a - b;
+        }
+        // TODO: multiplication, division
+    }
+
+
+    const context = function (key, a, b) {
+        return strategy[key](a, b);
+    }
+
+    const res1 = context('Addition',14,2);
+    document.write(`<div style="text-align: center; color:red">${res1}</div>`)
+
+    const res2 = context('Subtraction',2,5);
+    document.write(`<div style="text-align: center; color:red">${res2}</div>`)
+
+
+</script>
+
+
+
+</body>
+</html>

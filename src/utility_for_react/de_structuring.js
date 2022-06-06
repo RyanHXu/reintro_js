@@ -11,6 +11,8 @@ console.log(b);
 
 console.log(c);
 
+
+// rest destructuring
 [a, b, ...rest] = [10, 20, 30, 40, 50];
 
 console.log(rest);

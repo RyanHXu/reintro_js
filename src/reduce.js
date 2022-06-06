@@ -1,8 +1,9 @@
-let shoppingCart = [{
-    product: 'phone',
-    qty: 1,
-    price: 699
-},
+let shoppingCart = [
+    {
+        product: 'phone',
+        qty: 1,
+        price: 699
+    },
     {
         product: 'Screen Protector',
         qty: 1,

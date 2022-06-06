@@ -5,7 +5,7 @@ const appendElement = (data) => {
     document.getElementById('root').innerText = data
 }
 
-fetch('https://jsonplaceholder.typicode.com/posts/1')
+fetch('https://jsonplaceholder.typicode.com/posts/3')
     .then(res => res.text())
     .then(data => appendElement(data))
 
